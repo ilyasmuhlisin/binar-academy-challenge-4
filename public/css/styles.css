@@ -1,0 +1,539 @@
+body {
+  font-family: Helvetica;
+  font-style: normal;
+}
+
+#title {
+  background-color: #F1F3FF;
+}
+#title .navbar{
+  background-color: #F1F3FF;
+}
+#header-content {
+  padding-top: 100px;
+  background-color: #F1F3FF;
+}
+h1 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 150%;
+}
+h2 {
+  font-weight: bold;
+}
+
+.container {
+  margin-top: 8%;
+  margin-bottom: 8%;
+}
+
+.service-container {
+  margin: 8% 230px 8% 230px;
+}
+
+.container-fluid {
+  padding: 0% 7% 2% 5%;
+}
+
+.main-left {
+  padding: 0% 0% 0% 7%;
+}
+#features {
+  padding: 0% 7%;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+.nav-logo {
+  position: absolute;
+  width: 100px;
+  height: 34px;
+  top: 12px;
+  margin-left: 25px;
+}
+
+.nav-logo-footer {
+  position: absolute;
+  width: 100px;
+  height: 34px;
+}
+
+.nav-item {
+  padding-right: 25px;
+  background-color: #f1f3ff;
+}
+
+.nav-item .nav-link {
+  font-weight: bold;
+  font-family: Helvetica;
+  font-style: normal;
+  background-color: #f1f3ff;
+}
+
+.img-check {
+  width: 25px;
+  height: 25px;
+}
+
+.img-car {
+  height: 450px;
+  width: 750px;
+}
+
+.square-why {
+  margin: 20px 20px;
+  border: solid;
+  border-color: #d0d0d0;
+  border-radius: 10px;
+  padding-top: 20px;
+  flex: 0 0 22%;
+}
+
+.square-why h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.img-why {
+  width: 35px;
+  height: 35px;
+  padding-right: 2px;
+}
+
+.row-why {
+  display: flex;
+  justify-content: space-between;
+}
+
+#testimonials {
+  padding: 7% 7%;
+}
+
+#testimonials .test-content {
+  text-align: center;
+  line-height: 3rem;
+}
+
+#getting {
+  padding: 3% 7%;
+}
+
+.get {
+  background-color: #0d28a6;
+  border-radius: 10px;
+  text-align: center;
+  flex: 0 0 350px;
+}
+
+.get-content {
+  padding: 7% 340px;
+  color: #f1f3ff;
+}
+
+#question {
+  padding: 7% 8%;
+}
+
+.accordion .card {
+  border: none;
+  background: none;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+.accordion .card .card-header {
+  border: solid #d0d0d0;
+  border-radius: 7px;
+  background: none;
+  border-width: 2px;
+}
+
+.accordion .card-header i {
+  position: absolute;
+  font-size: 1.3rem;
+  right: 1rem;
+}
+
+.accordion .card-body {
+  color: grey;
+}
+
+#footer {
+  padding: 3% 7%;
+}
+
+.footer-content {
+  padding-left: 80px;
+}
+
+.testi-row {
+  align-items: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.testi-card {
+  max-width: 33.333%;
+  padding: 0.75rem;
+  margin-bottom: 2rem;
+  border: 0;
+  flex-basis: 30%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: 230px;
+}
+
+.testi-card b {
+  padding-left: 112px;
+  padding-bottom: 50px;
+  font-size: 15px;
+}
+
+.testi-row .one {
+  background-color: #f1f3ff;
+}
+.testi-row .two {
+  background-color: #f1f3ff;
+  margin-left: 20px;
+}
+.testi-row .three {
+  background-color: #f1f3ff;
+  margin-left: 20px;
+}
+.testi-row .four {
+  background-color: #f1f3ff;
+  margin-left: 20px;
+}
+
+.testi-card .testi-profile {
+  margin-bottom: 0.75rem;
+  width: 20%;
+  border-radius: 50%;
+  height: 80px;
+  margin-top: 30px;
+}
+
+.testi-card-text {
+  font-size: 85%;
+  padding-left: 30px;
+}
+.testi-card-text img {
+  width: 80px;
+  padding-bottom: 10px;
+}
+
+.testi-content {
+  display: flex;
+  padding-top: 34px;
+}
+
+.testi-button {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.testi-button button {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  background-color: transparent;
+  border: solid 0.1px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.testi-button button:hover {
+  background-color: #5cb85f;
+  color: white;
+}
+
+/* cars html */
+#modal .modal-box{
+  display: block;
+  position: absolute;
+  left: 200px;
+  bottom: 215px;
+  width: 75%;
+  height: 15%;
+  background-color: white;
+  border: none;
+  box-shadow: 0.5px 0.5px 2px 2px #E5E5E5;
+  border-radius: 10px;
+}
+
+#cars-search {
+  border: solid black;
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 992px) {
+  /* menu sidebar */
+  .navbar-collapse.collapsing .navbar-nav {
+    display: block;
+    position: fixed;
+    height: auto;
+    width: 50%;
+    top: 0;
+    bottom: 0;
+    right: -45%;
+    transform: translateX(1000%);
+    transition: all 3.25s ease;
+  }
+  .navbar-toggler {
+    border: none;
+  }
+
+  .navbar-collapse.show .navbar-nav {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    flex-direction: column;
+    height: auto;
+    width: 50%;
+    transition: right 1s ease;
+    box-shadow: 0 10rem 1000rem;
+  }
+
+  .navbar-toggler-icon {
+    height: 100px;
+    font-size: 30px;
+  }
+  /* navbar */
+  .nav-logo {
+    top: 40px;
+    width: 150px;
+    height: 50px;
+  }
+  #title .item-nav .close {
+    position: absolute;
+    right: 0px;
+    top: 48px;
+    font-size: 50px;
+  }
+  #title .item-nav h1 {
+    margin: 0px;
+  }
+  #title .item-nav button {
+    font-size: 30px;
+  }
+  #title .nav-item {
+    font-size: 30px;
+  }
+  #title .nav-item button {
+    font-size: 30px;
+  }
+  /* header section */
+  .left-header .main-left {
+    width: 100%;
+  }
+  .main-left h1 {
+    font-size: 90px;
+  }
+  .main-left p {
+    font-size: 40px;
+    padding-right: 20px;
+  }
+  .main-left button {
+    height: 80px;
+    font-size: 30px;
+  }
+  .main-right {
+    padding-right: 0;
+  }
+  .main-right img {
+    width: 900px;
+    height: 540px;
+  }
+  /* service section */
+  #service {
+    font-size: 40px;
+  }
+  #service .service-container {
+    margin-left: 50px;
+    margin-right: 20px;
+  }
+  #service .img-service {
+    width: 750px;
+    height: 620px;
+    margin-bottom: 50px;
+  }
+  #service h2 {
+    font-size: 60px;
+  }
+  #service p {
+    font-size: 36px;
+  }
+  #service .img-check {
+    width: 60px;
+    height: 60px;
+    margin-right: 30px;
+  }
+  /* features */
+  #features {
+    padding-left: 20px;
+    padding-right: 10px;
+  }
+  #features .features-why {
+    text-align: center;
+  }
+  #features .features-why h2 {
+    font-size: 60px;
+  }
+  #features .features-why p {
+    font-size: 30px;
+  }
+  #features .square-why .img-why {
+    width: 80px;
+    height: 80px;
+  }
+  #features .row-why {
+    display: unset;
+    justify-content: unset;
+  }
+  #features .square-why {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    border-radius: 30px;
+  }
+  #features .square-why h3 {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+  #features .square-why p {
+    font-size: 30px;
+  }
+  /* testimonials section */
+  #testimonials .test-content {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  #testimonials .test-content h2 {
+    font-size: 60px;
+  }
+  #testimonials .test-content p {
+    font-size: 30px;
+  }
+  #testimonials .testi-row {
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  #testimonials .testi-card {
+    max-width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 2rem;
+    border: 0;
+    flex-basis: unset;
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 830px;
+  }
+  #testimonials .testi-card .testi-content {
+    display: unset;
+  }
+  #testimonials .testi-card .testi-content .testi-profile {
+    width: 220px;
+    height: 220px;
+    margin-left: 300px;
+    margin-bottom: 30px;
+  }
+  #testimonials .testi-card .testi-content .testi-card-text img {
+    width: 200px;
+    margin-left: 280px;
+    margin-bottom: 30px;
+  }
+  #testimonials .testi-card-text {
+    font-size: 40px;
+    padding-right: 20px;
+  }
+  #testimonials .testi-card b {
+    position: relative;
+    font-size: 40px;
+    padding-left: 32px;
+    padding-bottom: 0px;
+    bottom: 20px;
+  }
+  #testimonials .testi-button button {
+    width: 80px;
+    height: 78px;
+    font-size: 50px;
+    margin-left: 20px;
+  }
+  #testimonials .testi-button button:hover {
+    background-color: #5cb85f;
+    color: white;
+  }
+
+  /* getting section */
+  #getting .get {
+    border-radius: 50px;
+  }
+  #getting .get-content {
+    padding: 7% 110px;
+  }
+  #getting .get-content h1 {
+    font-size: 60px;
+  }
+  #getting .get-content p {
+    font-size: 30px;
+  }
+  #getting .get-content button {
+    font-size: 30px;
+  }
+  /* question section */
+  #question .quest-content {
+    text-align: center;
+  }
+  #question .quest-content h2 {
+    font-size: 60px;
+  }
+  #question .quest-content p {
+    font-size: 30px;
+  }
+  #question .quest-acc {
+    padding-left: 0px;
+    padding-top: 10px;
+  }
+  #question .quest-acc .card .card-header h2 a {
+    font-size: 30px;
+    float: left;
+  }
+  #question .quest-acc .card .card-header h2 a i {
+    font-size: 35px;
+  }
+  #question .quest-acc .card .card-body {
+    font-size: 30px;
+  }
+  /* footer */
+  #footer {
+    margin-bottom: 100px;
+  }
+  #footer .footer-content {
+    padding: 0px 20px;
+  }
+  #footer .footer-content p {
+    font-size: 30px;
+  }
+  #footer .footer-content .img-why {
+    width: 80px;
+    height: 80px;
+    margin-left: 10px;
+    margin-bottom: 18px;
+  }
+  #footer .footer-content .nav-logo-footer {
+    width: 180px;
+    height: 70px;
+  }
+}

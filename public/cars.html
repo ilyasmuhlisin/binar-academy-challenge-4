@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="author" content="Sabrina" />
+    <meta name="description" content="Lorem ipsum dolor sit amet" />
+    <meta
+      name="viewport"
+      content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width"
+    />
+    <title>Binar: Challenge 04</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/styles-search.css" />
+    <script
+      src="https://kit.fontawesome.com/1810238c6c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <section id="title">
+      <nav
+        class="container-fluid pb-2 pt-2 navbar navbar-expand-lg navbar-light fixed-top"
+      >
+        <a class="navbar-brand" href="#"
+          ><img class="nav-logo left" src="images/logo.png" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#nav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav">
+          <ul
+            class="navbar-nav bg-white m-0 ml-lg-auto p-3 p-lg-0 pt-5 pt-lg-0"
+          >
+            <li class="item-nav d-inline d-lg-none">
+              <h1>BCR</h1>
+              <button
+                data-toggle="collapse"
+                data-target="#nav"
+                class="close float-right mr-5"
+              >
+                &times;
+              </button>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#service">Our Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#features">Why US</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#testimonials">Testimonial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#question">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <button type="button" class="btn btn-success">Register</button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+    <section id="header-content">
+      <div class="left-header row">
+        <div class="main-left col-lg-6">
+          <br /><br /><br />
+          <h1><b>Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)</b></h1>
+          <p>
+            Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas
+            terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu
+            untuk sewa mobil selama 24 jam.
+          </p>
+        </div>
+        <div class="main-right col-lg-6">
+          <img class="right img-car" src="images/img_car.png" />
+        </div>
+      </div>
+    </section>
+    <section id="modal">
+      <!-- search bar -->
+      <section class="search-box">
+        <div class="search-content">
+          <div class="input-group d-flex flex-column">
+            <p>Tipe Driver</p>
+            <select class="form-select" id="driver">
+              <option class="item" hidden>Pilih Tipe Driver</option>
+              <option class="item" value="true">Dengan Sopir</option>
+              <option class="item" value="false">Tanpa Sopir (Lepas Kunci)</option>
+            </select>
+          </div>
+          <div class="input-group d-flex flex-column">
+            <p>Tanggal</p>
+            <input type="date" class="form-control" id="date" />
+          </div>
+          <div class="input-group d-flex flex-column">
+            <p>Waktu Jemput</p>
+            <input type="time" class="form-control item" id="time"/>
+          </div>
+          <div class="input-group d-flex flex-column">
+            <p>Jumlah Penumpang (Opsional)</p>
+            <div class="d-flex flex-row">
+              <input type="number" class="form-control item" id="passanger" placeholder="Jumlah Penumpang"/>
+              <i class="bi bi-people-fill input-group-append people-icon"></i>
+            </div>
+          </div>
+
+          <button type="submit" class="btn button-search" id="btnFilterCar">Cari Mobil</button>
+        </div>
+      </section>
+      <!-- /search bar -->
+
+       <!-- result card -->
+    <div class="result-container">
+      <div class="result  d-flex" id="carsList">
+      
+      </div>
+    </div>
+    <!-- /result card -->
+    <!-- Footer -->
+    <section id="footer">
+      <div class="row">
+        <div class="footer-content col-lg-3" style="line-height: 2.5rem">
+          <p>Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</p>
+          <p>binarcarrental@gmail.com</p>
+          <p>081-233-334-808</p>
+        </div>
+        <div class="footer-content col-lg-3" style="font-weight: bold">
+          <p>Our Service</p>
+          <p>Why Us</p>
+          <p>Testimonials</p>
+          <p>FAQ</p>
+        </div>
+        <div class="footer-content col-lg-3">
+          <p>Connect With Us</p>
+          <div class="d-flex">
+            <img
+              class="img-why"
+              src="images/icon_facebook.png"
+              alt=""
+            /><br /><br />
+            <img
+              class="img-why"
+              src="images/icon_instagram.png"
+              alt=""
+            /><br /><br />
+            <img
+              class="img-why"
+              src="images/icon_twitter.png"
+              alt=""
+            /><br /><br />
+            <img
+              class="img-why"
+              src="images/icon_mail.png"
+              alt=""
+            /><br /><br />
+            <img
+              class="img-why"
+              src="images/icon_twitch.png"
+              alt=""
+            /><br /><br />
+          </div>
+        </div>
+        <div class="footer-content col-lg-3">
+          <p>Copyright Binar 2022</p>
+          <img class="nav-logo-footer left" src="images/logo.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- <button id="load-btn">Load</button>
+    <button id="clear-btn">Clear</button>
+    <div id="cars-container"></div> -->
+    <!-- Example Javascript -->
+    <!-- <script type="text/javascript" src="./scripts/binar.js"></script>
+    <script type="text/javascript" src="./scripts/app.example.js"></script>
+    <script type="text/javascript" src="./scripts/car.example.js"></script>
+    <script type="text/javascript" src="./scripts/main.example.js"></script> -->
+    <!-- <script type="text/javascript" src="./scripts/handleinput.js"></script>
+    <script type="text/javascript" src="./scripts/cars.js"></script> -->
+    <script type="text/javascript" src="./scripts/filterCar.js"></script>
+  </body>
+</html>
